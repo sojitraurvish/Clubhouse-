@@ -13,18 +13,19 @@ import Home from './pages/Home';
 const App:FC=()=>{
   return (
     <>
+
     <PlanLayout>
       <Routes>
-        <Route index path="/" element={<Welcome/>}/>
-        <Route index path="/invite" element={<PhoneConfirm/>}/>
-        <Route index path="/code_confirm" element={<CodeConfirm/>}/>
-        <Route index path="/allow_notification" element={<AllowNotification/>}/>
+        <Route path="/" element={<Welcome/>}/>
+        <Route path="/invite" element={<PhoneConfirm/>}/>
+        <Route path="/code_confirm" element={<CodeConfirm/>}/>
+        <Route path="/allow_notification" element={<AllowNotification/>}/>
       </Routes>
     </PlanLayout>
-
+    
     <AppLayout>
       <Routes>
-        <Route index path="/home" element={<Home/>}/>
+        <Route path="/home" element={<Home/>}/>
       </Routes>
     </AppLayout>
     </>

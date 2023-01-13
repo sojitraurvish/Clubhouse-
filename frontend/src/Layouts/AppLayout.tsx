@@ -11,7 +11,7 @@ const AppLayout:FC<AppLayout>=({children})=>{
     return (
         <div style={{
             backgroundColor:"#f2f0e4",
-            height:"100vh",
+            height:"100%",
             position:"relative",
             width:"100%",
             maxWidth:"500px",
